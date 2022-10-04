@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import flower from '../assets/img/logo.png'
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
 
@@ -28,7 +27,7 @@ const Navbar = () => {
                 </nav>
                 {/* <button><span>Register</span></button> */}
                 <div className="logo-wrap">
-                    <img src='https://raw.githubusercontent.com/bharathwebdev/dresteinWithParallex/main/src/logo_bgremove.png' className="drestein-logo"></img>
+                    <img className="drestein-logo" src='https://raw.githubusercontent.com/bharathwebdev/dresteinWithParallex/main/src/logo_bgremove.png' alt="no" />
                     <div className="text-logo">
                         <span className='title'>DRESTEIN</span>
                         <span className='subscript'>2 0 2 2</span>
