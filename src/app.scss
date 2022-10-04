@@ -80,6 +80,7 @@
 .outer-nav{
   position: fixed; 
   top: 0;
+  z-index: 2;
 }
 .scrolled{
   background-color: rgba(18, 17, 17, 0.91);
@@ -92,7 +93,7 @@
 }
 .navbar img{
   cursor: pointer;
-  width: 30%;
+  width: 35%;
   background-color: rgba(212, 212, 212, 0.76);
 }
 .navbar button{
