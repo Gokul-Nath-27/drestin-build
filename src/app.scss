@@ -1,0 +1,198 @@
+/************ Custom Font ************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/************ Default Css ************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+  }
+  
+  body {
+    position: relative;
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #121212 !important;
+    color: #fff !important;
+    font-family: 'Centra', sans-serif !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+  
+  p, a, li, button, ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    border: 0;
+    background-color: transparent;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+  }
+  
+  @media (min-width:1700px) {
+      main .container {
+          max-width: 100%;
+          padding: 0 150px;
+      }
+  }
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+.bg{
+    background-image: url('./assets/img/banner-bg.png');
+    background-position: top center;
+    background-size: cover;
+    min-height: 90vh;
+    position: absolute;
+}
+.logo{
+  height: 100px;
+  width: 100px;
+}
+
+/************ Navbar Css ************/
+.outer-nav{
+  position: fixed; 
+  top: 0;
+}
+.scrolled{
+  background-color: rgba(18, 17, 17, 0.91);
+}
+.navbar{
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+  cursor: pointer;
+  width: 30%;
+  background-color: rgba(212, 212, 212, 0.76);
+}
+.navbar button{
+  font-size: inherit;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  color: #fff;
+  border: 0.5px solid white;
+  position: relative;
+  transition: all .35s;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+button span{
+  position: relative;
+  z-index: 2;
+}
+
+button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff3c78;
+  transition: all .45s;
+}
+
+button:hover{
+  color: #fff;
+}
+
+button:hover:after{
+  width: 100%;
+}
+
+nav{
+  display: flex;
+  gap:1.5rem;
+  margin-right: 3rem;
+}
+nav a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color:#fff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav a:hover:after, nav .active:after{
+    width: 100%;
+}
+
+/************ Header Css ************/
+.header{ 
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4rem;
+  margin-top: 10rem;
+}
+.header .header-left{
+  flex: 1;
+  margin-top: 4rem;
+
+  h1{
+    font-family: 'Poppins';
+    font-size: 4rem;
+    width:80%;
+    margin-left: 1rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+} 
+.header .header-right{
+  flex: 1;
+  img {
+    animation: updown 4s linear infinite;
+  }
+} 
+
+@keyframes updown {
+  0% {
+      transform: translateY(-30px);
+  }
+  50% {
+      transform: translateY(30px);
+  }
+  100% {
+      transform: translateY(-30px);
+  }
+}
