@@ -160,10 +160,12 @@ nav a:hover:after, nav .active:after{
 
 /************ Header Css ************/
 .header{ 
+  width: 70%;
   display: flex;
   justify-content: space-around;
   padding: 0 4rem;
   margin-top: 10rem;
+
 }
 .header .header-left{
   flex: 1;
@@ -173,7 +175,7 @@ nav a:hover:after, nav .active:after{
     font-family: 'Poppins';
     font-size: 4rem;
     width:80%;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 20px;
   }
   p{
@@ -181,7 +183,7 @@ nav a:hover:after, nav .active:after{
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    width: 96%;
+    width: 80%;
   }
 } 
 .header .header-right{
@@ -190,6 +192,9 @@ nav a:hover:after, nav .active:after{
     animation: updown 4s linear infinite;
   }
 } 
+.countdown{
+  margin-top: 3rem;
+}
 
 @keyframes updown {
   0% {
